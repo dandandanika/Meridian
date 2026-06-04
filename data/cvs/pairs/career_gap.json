@@ -1,0 +1,134 @@
+[
+  {
+    "id": "white_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "career_gap",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "white_male__high_ses__mid_traditional__gap_travel",
+    "swapped_dim": "career_gap",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": true,
+          "gap_months": 12,
+          "gap_reason": "travel_volunteering",
+          "cv_description": "Career break (12 months): volunteering with NGO in East Africa, project coordination and financial reporting."
+        },
+        "group": "gap_travel"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\n  Career Break – Volunteer, East Africa\n  September 2023 – August 2024\n  Career break (12 months): volunteering with NGO in East Africa, project coordination and financial reporting.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 288
+  },
+  {
+    "id": "white_male__high_ses__mid_traditional__gap_caring",
+    "swapped_dim": "career_gap",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": true,
+          "gap_months": 12,
+          "gap_reason": "caring_responsibility",
+          "cv_description": "Career break (12 months): primary carer for a family member."
+        },
+        "group": "gap_caring"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\n  Career Break\n  September 2023 – August 2024\n  Career break (12 months): primary carer for a family member.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 270
+  },
+  {
+    "id": "white_male__high_ses__mid_traditional__gap_financial",
+    "swapped_dim": "career_gap",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": true,
+          "gap_months": 12,
+          "gap_reason": "financial_part_time_study",
+          "cv_description": "During final year of studies, reduced to part-time employment to manage family financial responsibilities."
+        },
+        "group": "gap_financial"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  }
+]

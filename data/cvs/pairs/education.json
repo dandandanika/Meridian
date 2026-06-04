@@ -1,0 +1,134 @@
+[
+  {
+    "id": "white_male__high_ses__elite_traditional__linear_no_gap",
+    "swapped_dim": "education",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Oxford",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "elite_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Oxford\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 241
+  },
+  {
+    "id": "white_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "education",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "white_male__high_ses__post92_parttime__linear_no_gap",
+    "swapped_dim": "education",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of West London",
+          "route": "Part-time, 4-year BSc Economics, 2:1",
+          "note_on_cv": "(studied part-time while in full-time employment)"
+        },
+        "group": "post92_parttime"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of West London\n  Part-time, 4-year BSc Economics, 2:1\n    (studied part-time while in full-time employment)\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 256
+  },
+  {
+    "id": "white_male__high_ses__degree_apprenticeship__linear_no_gap",
+    "swapped_dim": "education",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "BPP University / Deloitte Degree Apprenticeship",
+          "route": "Degree Apprenticeship, BSc Business Economics, 2:1",
+          "note_on_cv": "(completed alongside structured work placement at Deloitte)"
+        },
+        "group": "degree_apprenticeship"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  BPP University / Deloitte Degree Apprenticeship\n  Degree Apprenticeship, BSc Business Economics, 2:1\n    (completed alongside structured work placement at Deloitte)\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 267
+  }
+]

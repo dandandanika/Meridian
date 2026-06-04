@@ -1,0 +1,816 @@
+{
+  "_models": [
+    "A",
+    "B",
+    "C"
+  ],
+  "_threshold": 70.0,
+  "_model_full": {
+    "A": "A_keyword_tfidf",
+    "B": "B_semantic_minilm",
+    "C": "C_llm_judge_ollama_default"
+  },
+  "_summary": {
+    "A": {
+      "mean_abs_gap": 0.21,
+      "max_abs_gap": 1.78,
+      "adverse_impact_flags": 0
+    },
+    "B": {
+      "mean_abs_gap": 1.98,
+      "max_abs_gap": 5.55,
+      "adverse_impact_flags": 0
+    },
+    "C": {
+      "mean_abs_gap": 0.06,
+      "max_abs_gap": 1.0,
+      "adverse_impact_flags": 0
+    }
+  },
+  "A": {
+    "name": {
+      "baseline": "white_male",
+      "baseline_mean": 67.52,
+      "spread": 0.0,
+      "most_penalised": [
+        "white_female",
+        0.0
+      ],
+      "most_favoured": [
+        "white_female",
+        0.0
+      ],
+      "groups": {
+        "white_male": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "white_female": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_male": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_female": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_female": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_male": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "address": {
+      "baseline": "high_ses",
+      "baseline_mean": 67.86,
+      "spread": 0.33,
+      "most_penalised": [
+        "low_ses",
+        0.34
+      ],
+      "most_favoured": [
+        "low_ses",
+        0.34
+      ],
+      "groups": {
+        "high_ses": {
+          "n_cvs": 3,
+          "mean_score": 67.86,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "low_ses": {
+          "n_cvs": 3,
+          "mean_score": 68.19,
+          "gap_vs_baseline": 0.34,
+          "pct_of_baseline": 100.5,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "education": {
+      "baseline": "mid_traditional",
+      "baseline_mean": 67.52,
+      "spread": 1.78,
+      "most_penalised": [
+        "post92_parttime",
+        -1.78
+      ],
+      "most_favoured": [
+        "elite_traditional",
+        0.0
+      ],
+      "groups": {
+        "elite_traditional": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "mid_traditional": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "post92_parttime": {
+          "n_cvs": 1,
+          "mean_score": 65.74,
+          "gap_vs_baseline": -1.78,
+          "pct_of_baseline": 97.4,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "degree_apprenticeship": {
+          "n_cvs": 1,
+          "mean_score": 66.38,
+          "gap_vs_baseline": -1.14,
+          "pct_of_baseline": 98.3,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "career_gap": {
+      "baseline": "linear_no_gap",
+      "baseline_mean": 67.52,
+      "spread": 0.05,
+      "most_penalised": [
+        "gap_caring",
+        0.0
+      ],
+      "most_favoured": [
+        "gap_travel",
+        0.05
+      ],
+      "groups": {
+        "linear_no_gap": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "gap_travel": {
+          "n_cvs": 1,
+          "mean_score": 67.57,
+          "gap_vs_baseline": 0.05,
+          "pct_of_baseline": 100.1,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_caring": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_financial": {
+          "n_cvs": 1,
+          "mean_score": 67.52,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    }
+  },
+  "B": {
+    "name": {
+      "baseline": "white_male",
+      "baseline_mean": 64.21,
+      "spread": 5.55,
+      "most_penalised": [
+        "east_asian_male",
+        -5.55
+      ],
+      "most_favoured": [
+        "black_female",
+        -0.67
+      ],
+      "groups": {
+        "white_male": {
+          "n_cvs": 1,
+          "mean_score": 64.21,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "white_female": {
+          "n_cvs": 1,
+          "mean_score": 63.12,
+          "gap_vs_baseline": -1.09,
+          "pct_of_baseline": 98.3,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_male": {
+          "n_cvs": 1,
+          "mean_score": 62.3,
+          "gap_vs_baseline": -1.91,
+          "pct_of_baseline": 97.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_female": {
+          "n_cvs": 1,
+          "mean_score": 63.54,
+          "gap_vs_baseline": -0.67,
+          "pct_of_baseline": 99.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 58.66,
+          "gap_vs_baseline": -5.55,
+          "pct_of_baseline": 91.4,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 60.9,
+          "gap_vs_baseline": -3.31,
+          "pct_of_baseline": 94.8,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 61.62,
+          "gap_vs_baseline": -2.59,
+          "pct_of_baseline": 96.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 62.53,
+          "gap_vs_baseline": -1.68,
+          "pct_of_baseline": 97.4,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_female": {
+          "n_cvs": 1,
+          "mean_score": 60.36,
+          "gap_vs_baseline": -3.85,
+          "pct_of_baseline": 94.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_male": {
+          "n_cvs": 1,
+          "mean_score": 63.46,
+          "gap_vs_baseline": -0.75,
+          "pct_of_baseline": 98.8,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "address": {
+      "baseline": "high_ses",
+      "baseline_mean": 65.23,
+      "spread": 1.22,
+      "most_penalised": [
+        "low_ses",
+        -1.22
+      ],
+      "most_favoured": [
+        "low_ses",
+        -1.22
+      ],
+      "groups": {
+        "high_ses": {
+          "n_cvs": 3,
+          "mean_score": 65.23,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "low_ses": {
+          "n_cvs": 3,
+          "mean_score": 64.01,
+          "gap_vs_baseline": -1.22,
+          "pct_of_baseline": 98.1,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "education": {
+      "baseline": "mid_traditional",
+      "baseline_mean": 64.21,
+      "spread": 2.11,
+      "most_penalised": [
+        "elite_traditional",
+        0.23
+      ],
+      "most_favoured": [
+        "degree_apprenticeship",
+        2.11
+      ],
+      "groups": {
+        "elite_traditional": {
+          "n_cvs": 1,
+          "mean_score": 64.44,
+          "gap_vs_baseline": 0.23,
+          "pct_of_baseline": 100.4,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "mid_traditional": {
+          "n_cvs": 1,
+          "mean_score": 64.21,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "post92_parttime": {
+          "n_cvs": 1,
+          "mean_score": 64.84,
+          "gap_vs_baseline": 0.63,
+          "pct_of_baseline": 101.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "degree_apprenticeship": {
+          "n_cvs": 1,
+          "mean_score": 66.32,
+          "gap_vs_baseline": 2.11,
+          "pct_of_baseline": 103.3,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "career_gap": {
+      "baseline": "linear_no_gap",
+      "baseline_mean": 64.21,
+      "spread": 3.48,
+      "most_penalised": [
+        "gap_financial",
+        0.0
+      ],
+      "most_favoured": [
+        "gap_caring",
+        3.48
+      ],
+      "groups": {
+        "linear_no_gap": {
+          "n_cvs": 1,
+          "mean_score": 64.21,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "gap_travel": {
+          "n_cvs": 1,
+          "mean_score": 66.86,
+          "gap_vs_baseline": 2.65,
+          "pct_of_baseline": 104.1,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_caring": {
+          "n_cvs": 1,
+          "mean_score": 67.69,
+          "gap_vs_baseline": 3.48,
+          "pct_of_baseline": 105.4,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_financial": {
+          "n_cvs": 1,
+          "mean_score": 64.21,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 0.0,
+          "impact_ratio": null,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    }
+  },
+  "C": {
+    "name": {
+      "baseline": "white_male",
+      "baseline_mean": 85.0,
+      "spread": 0.0,
+      "most_penalised": [
+        "white_female",
+        0.0
+      ],
+      "most_favoured": [
+        "white_female",
+        0.0
+      ],
+      "groups": {
+        "white_male": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "white_female": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_male": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "black_female": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "east_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_female": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "south_asian_male": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_female": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "arab_muslim_male": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "address": {
+      "baseline": "high_ses",
+      "baseline_mean": 85.0,
+      "spread": 1.0,
+      "most_penalised": [
+        "low_ses",
+        -1.0
+      ],
+      "most_favoured": [
+        "low_ses",
+        -1.0
+      ],
+      "groups": {
+        "high_ses": {
+          "n_cvs": 3,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "low_ses": {
+          "n_cvs": 3,
+          "mean_score": 84.0,
+          "gap_vs_baseline": -1.0,
+          "pct_of_baseline": 98.8,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "education": {
+      "baseline": "mid_traditional",
+      "baseline_mean": 85.0,
+      "spread": 0.0,
+      "most_penalised": [
+        "elite_traditional",
+        0.0
+      ],
+      "most_favoured": [
+        "elite_traditional",
+        0.0
+      ],
+      "groups": {
+        "elite_traditional": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "mid_traditional": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "post92_parttime": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "degree_apprenticeship": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    },
+    "career_gap": {
+      "baseline": "linear_no_gap",
+      "baseline_mean": 85.0,
+      "spread": 0.0,
+      "most_penalised": [
+        "gap_travel",
+        0.0
+      ],
+      "most_favoured": [
+        "gap_travel",
+        0.0
+      ],
+      "groups": {
+        "linear_no_gap": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": true,
+          "adverse_impact_flag": false
+        },
+        "gap_travel": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_caring": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        },
+        "gap_financial": {
+          "n_cvs": 1,
+          "mean_score": 85.0,
+          "gap_vs_baseline": 0.0,
+          "pct_of_baseline": 100.0,
+          "shortlist_rate": 1.0,
+          "impact_ratio": 1.0,
+          "is_baseline": false,
+          "adverse_impact_flag": false
+        }
+      }
+    }
+  }
+}

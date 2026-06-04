@@ -1,0 +1,56 @@
+{
+  "total_cvs_generated": 74,
+  "pairs_per_dimension": {
+    "name": 10,
+    "address": 6,
+    "education": 4,
+    "career_gap": 4
+  },
+  "batch_size": 50,
+  "token_estimates": {
+    "min": 240,
+    "max": 314,
+    "mean": 261.9,
+    "total": 19384
+  },
+  "baseline_signals": {
+    "name": "white_male",
+    "address": "high_ses",
+    "education": "mid_traditional",
+    "career_gap": "linear_no_gap"
+  },
+  "dimensions": {
+    "name": [
+      "white_male",
+      "white_female",
+      "black_male",
+      "black_female",
+      "east_asian_male",
+      "east_asian_female",
+      "south_asian_female",
+      "south_asian_male",
+      "arab_muslim_female",
+      "arab_muslim_male"
+    ],
+    "address": [
+      "high_ses",
+      "high_ses",
+      "low_ses",
+      "low_ses",
+      "high_ses",
+      "low_ses"
+    ],
+    "education": [
+      "elite_traditional",
+      "mid_traditional",
+      "post92_parttime",
+      "degree_apprenticeship"
+    ],
+    "career_gap": [
+      "linear_no_gap",
+      "gap_travel",
+      "gap_caring",
+      "gap_financial"
+    ]
+  }
+}

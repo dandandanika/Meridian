@@ -1,0 +1,332 @@
+[
+  {
+    "id": "white_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "James Wilson",
+        "group": "white_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMES WILSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "white_female__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Emily Clarke",
+        "group": "white_female"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nEMILY CLARKE\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "black_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Jamal Washington",
+        "group": "black_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nJAMAL WASHINGTON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 243
+  },
+  {
+    "id": "black_female__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Aaliyah Johnson",
+        "group": "black_female"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nAALIYAH JOHNSON\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 243
+  },
+  {
+    "id": "east_asian_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Wei Chen",
+        "group": "east_asian_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nWEI CHEN\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 241
+  },
+  {
+    "id": "east_asian_female__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Mei Lin Zhang",
+        "group": "east_asian_female"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nMEI LIN ZHANG\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "south_asian_female__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Priya Patel",
+        "group": "south_asian_female"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nPRIYA PATEL\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "south_asian_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Rahul Sharma",
+        "group": "south_asian_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nRAHUL SHARMA\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  },
+  {
+    "id": "arab_muslim_female__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Fatima Al-Hassan",
+        "group": "arab_muslim_female"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nFATIMA AL-HASSAN\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 243
+  },
+  {
+    "id": "arab_muslim_male__high_ses__mid_traditional__linear_no_gap",
+    "swapped_dim": "name",
+    "signals": {
+      "name": {
+        "value": "Omar Khalid",
+        "group": "arab_muslim_male"
+      },
+      "address": {
+        "value": "14 Eaton Square, London SW1W 9BH",
+        "group": "high_ses"
+      },
+      "education": {
+        "value": {
+          "institution": "University of Birmingham",
+          "route": "Full-time, 3-year BSc Economics, 2:1",
+          "note_on_cv": ""
+        },
+        "group": "mid_traditional"
+      },
+      "career_gap": {
+        "value": {
+          "gap_present": false,
+          "gap_months": 0,
+          "gap_reason": null,
+          "cv_description": null
+        },
+        "group": "linear_no_gap"
+      }
+    },
+    "cv_text": "============================================================\nOMAR KHALID\n14 Eaton Square, London SW1W 9BH\n============================================================\n\nEDUCATION\n─────────\n  University of Birmingham\n  Full-time, 3-year BSc Economics, 2:1\n  Grade: Upper Second (68%)\n\nWORK EXPERIENCE\n───────────────\n  Investment Banking Summer Analyst\n  Global Investment Bank (Tier-1, London)\n  June 2023 – August 2023\n  • Supported M&A deal execution across three live transactions totalling £2.4bn.\n  • Built financial models (DCF, LBO, comparable company analysis) in Excel.\n  • Prepared client-facing pitch books and management presentations.\n  • Conducted sector research and industry screening using Bloomberg Terminal.\n\nSKILLS\n──────\n  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)\n\nLANGUAGES\n─────────\n  English (native)\n============================================================\n",
+    "token_est": 242
+  }
+]

@@ -1,0 +1,29 @@
+============================================================
+JAMES WILSON
+14 Eaton Square, London SW1W 9BH
+============================================================
+
+EDUCATION
+─────────
+  University of Oxford
+  Full-time, 3-year BSc Economics, 2:1
+  Grade: Upper Second (68%)
+
+WORK EXPERIENCE
+───────────────
+  Investment Banking Summer Analyst
+  Global Investment Bank (Tier-1, London)
+  June 2023 – August 2023
+  • Supported M&A deal execution across three live transactions totalling £2.4bn.
+  • Built financial models (DCF, LBO, comparable company analysis) in Excel.
+  • Prepared client-facing pitch books and management presentations.
+  • Conducted sector research and industry screening using Bloomberg Terminal.
+
+SKILLS
+──────
+  Python (pandas, numpy) · Microsoft Excel (advanced) · Bloomberg Terminal · SQL · PowerPoint · Financial modelling (DCF, LBO)
+
+LANGUAGES
+─────────
+  English (native)
+============================================================
