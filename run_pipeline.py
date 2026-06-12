@@ -32,6 +32,11 @@ ROOT = Path(__file__).parent
 GEN = ROOT / "CV Generation" / "generate_cvs.py"
 SCREEN = ROOT / "CV Screening" / "run_screening.py"
 SCORE = ROOT / "Bias Scoring" / "bias_scoring.py"
+RANK = ROOT / "CV Screening" / "run_ranking.py"
+RANKSTATS = ROOT / "Bias Scoring" / "ranking_stats.py"
+HIST = ROOT / "CV Screening" / "run_history.py"
+HISTSTATS = ROOT / "Bias Scoring" / "history_stats.py"
+ROLES = ROOT / "CV Screening" / "run_roles.py"
 
 
 def step(title: str, cmd: list, cwd: Path):
@@ -58,6 +63,18 @@ def main():
                     help="LLM model name(s) for Model C, e.g. "
                          "llama3.1:8b gemma3:12b qwen2:latest. Each runs as its "
                          "own judge column for side-by-side comparison.")
+    ap.add_argument("--ranking", action="store_true",
+                    help="run the P0 ranking-audit track (LLM ranks identical-"
+                         "merit slates) + P6 significance stats. This is the "
+                         "method that actually surfaces bias.")
+    ap.add_argument("--trials", type=int, default=30,
+                    help="randomized ranking trials per dimension per judge (P0)")
+    ap.add_argument("--history", action="store_true",
+                    help="run the P3 historical-hire (in-context bias) experiment")
+    ap.add_argument("--roles", action="store_true",
+                    help="run the P4 role-contrast experiment (IB vs social worker)")
+    ap.add_argument("--skip-rating", action="store_true",
+                    help="skip the pointwise rating track (Phases B & C)")
     ap.add_argument("--skip-generate", action="store_true",
                     help="reuse existing data/cvs instead of regenerating")
     args = ap.parse_args()
@@ -66,6 +83,8 @@ def main():
     print(f"  Models : {args.models}")
     print(f"  Backend: {args.backend}")
     print(f"  Judges : {args.judges or '[default]'}")
+    print(f"  Track  : {'ranking ' if args.ranking else ''}"
+          f"{'' if args.skip_rating else 'rating'}".strip() or "none")
 
     # Phase A — generation
     if args.skip_generate and (ROOT / "data" / "cvs" / "pairs").exists():
@@ -73,22 +92,52 @@ def main():
     else:
         step("PHASE A — CV Generation", [GEN.name], GEN.parent)
 
-    # Phase B — screening
-    screen_cmd = [SCREEN.name, "--models", *args.models, "--backend", args.backend]
-    if args.judges:
-        screen_cmd += ["--judges", *args.judges]
-    step("PHASE B — ATS Screening", screen_cmd, SCREEN.parent)
+    # Rating track (pointwise) — Phases B & C
+    if not args.skip_rating:
+        screen_cmd = [SCREEN.name, "--models", *args.models, "--backend", args.backend]
+        if args.judges:
+            screen_cmd += ["--judges", *args.judges]
+        step("PHASE B — ATS Screening (pointwise rating)", screen_cmd, SCREEN.parent)
+        step("PHASE C — Bias Scoring",
+             [SCORE.name, "--threshold", str(args.threshold)], SCORE.parent)
 
-    # Phase C — bias scoring
-    step("PHASE C — Bias Scoring",
-         [SCORE.name, "--threshold", str(args.threshold)],
-         SCORE.parent)
+    # Ranking track (P0 + P6) — the bias-revealing method
+    if args.ranking:
+        rank_cmd = [RANK.name, "--backend", args.backend, "--trials", str(args.trials)]
+        if args.judges:
+            rank_cmd += ["--judges", *args.judges]
+        step("PHASE P0 — Ranking Audit", rank_cmd, RANK.parent)
+        step("PHASE P6 — Ranking Significance", [RANKSTATS.name], RANKSTATS.parent)
+
+    # P3 — historical-hire in-context bias
+    if args.history:
+        hist_cmd = [HIST.name, "--backend", args.backend, "--trials", str(args.trials)]
+        if args.judges:
+            hist_cmd += ["--judges", *args.judges]
+        step("PHASE P3 — Historical-Hire Bias", hist_cmd, HIST.parent)
+        step("PHASE P3 — History Significance", [HISTSTATS.name], HISTSTATS.parent)
+
+    # P4 — role / occupation contrast
+    if args.roles:
+        roles_cmd = [ROLES.name, "--backend", args.backend, "--trials", str(args.trials)]
+        if args.judges:
+            roles_cmd += ["--judges", *args.judges]
+        step("PHASE P4 — Role Contrast", roles_cmd, ROLES.parent)
+        step("PHASE P4 — Role Significance",
+             [RANKSTATS.name, "--results", "../outputs/role_results.csv"],
+             RANKSTATS.parent)
 
     print("\n" + "═" * 70)
     print("  ✓ Pipeline complete. Key artefacts in outputs/:")
-    print("      screening_results.csv / .json   (Phase B)")
-    print("      bias_scores.csv / .json          (Phase C)")
-    print("      bias_report.md                   (Phase C, human-readable)")
+    if not args.skip_rating:
+        print("      screening_results.csv / bias_report.md   (rating track)")
+    if args.ranking:
+        print("      ranking_results.csv                      (P0)")
+        print("      ranking_bias_report.md                   (P6 — verdicts + significance)")
+    if args.history:
+        print("      history_bias_report.md                   (P3 — in-context favouritism)")
+    if args.roles:
+        print("      role_results.csv + ranking_bias_report.md (P4 — per-role verdicts)")
     print("═" * 70)
 
 

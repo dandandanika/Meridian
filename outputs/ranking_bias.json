@@ -1,0 +1,857 @@
+{
+  "_models": [
+    "D:nomic-embed-text:v1.5",
+    "D:qwen2:latest"
+  ],
+  "_alpha": 0.05,
+  "_model_full": {
+    "D:nomic-embed-text:v1.5": "D_llm_rank_mock_nomic-embed-text:v1.5",
+    "D:qwen2:latest": "D_llm_rank_mock_qwen2:latest"
+  },
+  "_perms": 5000,
+  "_boot": 2000,
+  "D:nomic-embed-text:v1.5": {
+    "name": {
+      "groups": {
+        "arab_muslim_female": {
+          "n_obs": 15,
+          "mean_rank": 9.867,
+          "rank_ci": [
+            9.667,
+            10.0
+          ],
+          "delta_vs_chance": 4.367,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "arab_muslim_male": {
+          "n_obs": 15,
+          "mean_rank": 8.533,
+          "rank_ci": [
+            8.133,
+            8.867
+          ],
+          "delta_vs_chance": 3.033,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "black_female": {
+          "n_obs": 15,
+          "mean_rank": 7.6,
+          "rank_ci": [
+            6.933,
+            8.267
+          ],
+          "delta_vs_chance": 2.1,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0042,
+          "p_holm": 0.021,
+          "significant": true,
+          "is_baseline": false
+        },
+        "black_male": {
+          "n_obs": 15,
+          "mean_rank": 6.667,
+          "rank_ci": [
+            6.0,
+            7.333
+          ],
+          "delta_vs_chance": 1.167,
+          "selection_rate": 0.267,
+          "sel_ci": [
+            0.067,
+            0.467
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.129,
+          "p_holm": 0.3869,
+          "significant": false,
+          "is_baseline": false
+        },
+        "east_asian_female": {
+          "n_obs": 15,
+          "mean_rank": 3.8,
+          "rank_ci": [
+            3.333,
+            4.267
+          ],
+          "delta_vs_chance": -1.7,
+          "selection_rate": 0.933,
+          "sel_ci": [
+            0.8,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0226,
+          "p_holm": 0.0904,
+          "significant": false,
+          "is_baseline": false
+        },
+        "east_asian_male": {
+          "n_obs": 15,
+          "mean_rank": 3.267,
+          "rank_ci": [
+            2.8,
+            3.8
+          ],
+          "delta_vs_chance": -2.233,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0034,
+          "p_holm": 0.0204,
+          "significant": true,
+          "is_baseline": false
+        },
+        "south_asian_female": {
+          "n_obs": 15,
+          "mean_rank": 6.133,
+          "rank_ci": [
+            5.6,
+            6.667
+          ],
+          "delta_vs_chance": 0.633,
+          "selection_rate": 0.267,
+          "sel_ci": [
+            0.067,
+            0.533
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.4205,
+          "p_holm": 0.841,
+          "significant": false,
+          "is_baseline": false
+        },
+        "south_asian_male": {
+          "n_obs": 15,
+          "mean_rank": 5.667,
+          "rank_ci": [
+            4.867,
+            6.4
+          ],
+          "delta_vs_chance": 0.167,
+          "selection_rate": 0.533,
+          "sel_ci": [
+            0.267,
+            0.8
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.8618,
+          "p_holm": 0.8618,
+          "significant": false,
+          "is_baseline": false
+        },
+        "white_female": {
+          "n_obs": 15,
+          "mean_rank": 2.333,
+          "rank_ci": [
+            1.933,
+            2.8
+          ],
+          "delta_vs_chance": -3.167,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "white_male": {
+          "n_obs": 15,
+          "mean_rank": 1.133,
+          "rank_ci": [
+            1.0,
+            1.333
+          ],
+          "delta_vs_chance": -4.367,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": true
+        }
+      },
+      "e0_rank": 5.5,
+      "e0_sel": 0.5,
+      "n": 10,
+      "k": 5,
+      "baseline": "white_male",
+      "any_significant": true
+    },
+    "address": {
+      "groups": {
+        "high_ses": {
+          "n_obs": 45,
+          "mean_rank": 2,
+          "rank_ci": [
+            2.0,
+            2.0
+          ],
+          "delta_vs_chance": -1.5,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0004,
+          "significant": true,
+          "is_baseline": true
+        },
+        "low_ses": {
+          "n_obs": 45,
+          "mean_rank": 5,
+          "rank_ci": [
+            5.0,
+            5.0
+          ],
+          "delta_vs_chance": 1.5,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0004,
+          "significant": true,
+          "is_baseline": false
+        }
+      },
+      "e0_rank": 3.5,
+      "e0_sel": 0.5,
+      "n": 6,
+      "k": 3,
+      "baseline": "high_ses",
+      "any_significant": true
+    },
+    "education": {
+      "groups": {
+        "degree_apprenticeship": {
+          "n_obs": 15,
+          "mean_rank": 3,
+          "rank_ci": [
+            2.733,
+            3.267
+          ],
+          "delta_vs_chance": 0.5,
+          "selection_rate": 0.133,
+          "sel_ci": [
+            0.0,
+            0.333
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.101,
+          "p_holm": 0.202,
+          "significant": false,
+          "is_baseline": false
+        },
+        "elite_traditional": {
+          "n_obs": 15,
+          "mean_rank": 1.133,
+          "rank_ci": [
+            1.0,
+            1.333
+          ],
+          "delta_vs_chance": -1.367,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": false
+        },
+        "mid_traditional": {
+          "n_obs": 15,
+          "mean_rank": 2.067,
+          "rank_ci": [
+            1.8,
+            2.333
+          ],
+          "delta_vs_chance": -0.433,
+          "selection_rate": 0.8,
+          "sel_ci": [
+            0.6,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.1692,
+          "p_holm": 0.202,
+          "significant": false,
+          "is_baseline": true
+        },
+        "post92_parttime": {
+          "n_obs": 15,
+          "mean_rank": 3.8,
+          "rank_ci": [
+            3.533,
+            4.0
+          ],
+          "delta_vs_chance": 1.3,
+          "selection_rate": 0.067,
+          "sel_ci": [
+            0.0,
+            0.2
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": false
+        }
+      },
+      "e0_rank": 2.5,
+      "e0_sel": 0.5,
+      "n": 4,
+      "k": 2,
+      "baseline": "mid_traditional",
+      "any_significant": true
+    },
+    "career_gap": {
+      "groups": {
+        "gap_caring": {
+          "n_obs": 15,
+          "mean_rank": 3.333,
+          "rank_ci": [
+            2.933,
+            3.667
+          ],
+          "delta_vs_chance": 0.833,
+          "selection_rate": 0.133,
+          "sel_ci": [
+            0.0,
+            0.333
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0056,
+          "p_holm": 0.0168,
+          "significant": true,
+          "is_baseline": false
+        },
+        "gap_financial": {
+          "n_obs": 15,
+          "mean_rank": 3.333,
+          "rank_ci": [
+            2.867,
+            3.733
+          ],
+          "delta_vs_chance": 0.833,
+          "selection_rate": 0.133,
+          "sel_ci": [
+            0.0,
+            0.333
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0056,
+          "p_holm": 0.0168,
+          "significant": true,
+          "is_baseline": false
+        },
+        "gap_travel": {
+          "n_obs": 15,
+          "mean_rank": 2,
+          "rank_ci": [
+            1.6,
+            2.4
+          ],
+          "delta_vs_chance": -0.5,
+          "selection_rate": 0.733,
+          "sel_ci": [
+            0.467,
+            0.933
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.1004,
+          "p_holm": 0.1004,
+          "significant": false,
+          "is_baseline": false
+        },
+        "linear_no_gap": {
+          "n_obs": 15,
+          "mean_rank": 1.333,
+          "rank_ci": [
+            1.067,
+            1.6
+          ],
+          "delta_vs_chance": -1.167,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": true
+        }
+      },
+      "e0_rank": 2.5,
+      "e0_sel": 0.5,
+      "n": 4,
+      "k": 2,
+      "baseline": "linear_no_gap",
+      "any_significant": true
+    }
+  },
+  "D:qwen2:latest": {
+    "name": {
+      "groups": {
+        "arab_muslim_female": {
+          "n_obs": 15,
+          "mean_rank": 9.733,
+          "rank_ci": [
+            9.4,
+            10.0
+          ],
+          "delta_vs_chance": 4.233,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "arab_muslim_male": {
+          "n_obs": 15,
+          "mean_rank": 8.6,
+          "rank_ci": [
+            8.267,
+            8.933
+          ],
+          "delta_vs_chance": 3.1,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "black_female": {
+          "n_obs": 15,
+          "mean_rank": 8.133,
+          "rank_ci": [
+            7.467,
+            8.733
+          ],
+          "delta_vs_chance": 2.633,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.001,
+          "p_holm": 0.006,
+          "significant": true,
+          "is_baseline": false
+        },
+        "black_male": {
+          "n_obs": 15,
+          "mean_rank": 6.333,
+          "rank_ci": [
+            5.8,
+            6.867
+          ],
+          "delta_vs_chance": 0.833,
+          "selection_rate": 0.267,
+          "sel_ci": [
+            0.067,
+            0.533
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.2919,
+          "p_holm": 0.8344,
+          "significant": false,
+          "is_baseline": false
+        },
+        "east_asian_female": {
+          "n_obs": 15,
+          "mean_rank": 4.267,
+          "rank_ci": [
+            3.533,
+            5.0
+          ],
+          "delta_vs_chance": -1.233,
+          "selection_rate": 0.8,
+          "sel_ci": [
+            0.6,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.1026,
+          "p_holm": 0.4103,
+          "significant": false,
+          "is_baseline": false
+        },
+        "east_asian_male": {
+          "n_obs": 15,
+          "mean_rank": 3.267,
+          "rank_ci": [
+            2.932,
+            3.667
+          ],
+          "delta_vs_chance": -2.233,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0028,
+          "p_holm": 0.014,
+          "significant": true,
+          "is_baseline": false
+        },
+        "south_asian_female": {
+          "n_obs": 15,
+          "mean_rank": 6.333,
+          "rank_ci": [
+            5.6,
+            7.067
+          ],
+          "delta_vs_chance": 0.833,
+          "selection_rate": 0.267,
+          "sel_ci": [
+            0.067,
+            0.533
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.2781,
+          "p_holm": 0.8344,
+          "significant": false,
+          "is_baseline": false
+        },
+        "south_asian_male": {
+          "n_obs": 15,
+          "mean_rank": 4.933,
+          "rank_ci": [
+            4.4,
+            5.467
+          ],
+          "delta_vs_chance": -0.567,
+          "selection_rate": 0.667,
+          "sel_ci": [
+            0.4,
+            0.867
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.4665,
+          "p_holm": 0.8344,
+          "significant": false,
+          "is_baseline": false
+        },
+        "white_female": {
+          "n_obs": 15,
+          "mean_rank": 2.333,
+          "rank_ci": [
+            2.0,
+            2.733
+          ],
+          "delta_vs_chance": -3.167,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": false
+        },
+        "white_male": {
+          "n_obs": 15,
+          "mean_rank": 1.067,
+          "rank_ci": [
+            1.0,
+            1.2
+          ],
+          "delta_vs_chance": -4.433,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.002,
+          "significant": true,
+          "is_baseline": true
+        }
+      },
+      "e0_rank": 5.5,
+      "e0_sel": 0.5,
+      "n": 10,
+      "k": 5,
+      "baseline": "white_male",
+      "any_significant": true
+    },
+    "address": {
+      "groups": {
+        "high_ses": {
+          "n_obs": 45,
+          "mean_rank": 2.022,
+          "rank_ci": [
+            2.0,
+            2.067
+          ],
+          "delta_vs_chance": -1.478,
+          "selection_rate": 0.978,
+          "sel_ci": [
+            0.933,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0004,
+          "significant": true,
+          "is_baseline": true
+        },
+        "low_ses": {
+          "n_obs": 45,
+          "mean_rank": 4.978,
+          "rank_ci": [
+            4.933,
+            5.0
+          ],
+          "delta_vs_chance": 1.478,
+          "selection_rate": 0.022,
+          "sel_ci": [
+            0.0,
+            0.067
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0004,
+          "significant": true,
+          "is_baseline": false
+        }
+      },
+      "e0_rank": 3.5,
+      "e0_sel": 0.5,
+      "n": 6,
+      "k": 3,
+      "baseline": "high_ses",
+      "any_significant": true
+    },
+    "education": {
+      "groups": {
+        "degree_apprenticeship": {
+          "n_obs": 15,
+          "mean_rank": 3,
+          "rank_ci": [
+            2.667,
+            3.267
+          ],
+          "delta_vs_chance": 0.5,
+          "selection_rate": 0.067,
+          "sel_ci": [
+            0.0,
+            0.2
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0984,
+          "p_holm": 0.1968,
+          "significant": false,
+          "is_baseline": false
+        },
+        "elite_traditional": {
+          "n_obs": 15,
+          "mean_rank": 1.067,
+          "rank_ci": [
+            1.0,
+            1.2
+          ],
+          "delta_vs_chance": -1.433,
+          "selection_rate": 1.0,
+          "sel_ci": [
+            1.0,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": false
+        },
+        "mid_traditional": {
+          "n_obs": 15,
+          "mean_rank": 2.067,
+          "rank_ci": [
+            2.0,
+            2.2
+          ],
+          "delta_vs_chance": -0.433,
+          "selection_rate": 0.933,
+          "sel_ci": [
+            0.8,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.1598,
+          "p_holm": 0.1968,
+          "significant": false,
+          "is_baseline": true
+        },
+        "post92_parttime": {
+          "n_obs": 15,
+          "mean_rank": 3.867,
+          "rank_ci": [
+            3.667,
+            4.0
+          ],
+          "delta_vs_chance": 1.367,
+          "selection_rate": 0.0,
+          "sel_ci": [
+            0.0,
+            0.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": false
+        }
+      },
+      "e0_rank": 2.5,
+      "e0_sel": 0.5,
+      "n": 4,
+      "k": 2,
+      "baseline": "mid_traditional",
+      "any_significant": true
+    },
+    "career_gap": {
+      "groups": {
+        "gap_caring": {
+          "n_obs": 15,
+          "mean_rank": 3.533,
+          "rank_ci": [
+            3.2,
+            3.8
+          ],
+          "delta_vs_chance": 1.033,
+          "selection_rate": 0.067,
+          "sel_ci": [
+            0.0,
+            0.2
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0008,
+          "p_holm": 0.0024,
+          "significant": true,
+          "is_baseline": false
+        },
+        "gap_financial": {
+          "n_obs": 15,
+          "mean_rank": 3.133,
+          "rank_ci": [
+            2.733,
+            3.533
+          ],
+          "delta_vs_chance": 0.633,
+          "selection_rate": 0.267,
+          "sel_ci": [
+            0.067,
+            0.467
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0356,
+          "p_holm": 0.0712,
+          "significant": false,
+          "is_baseline": false
+        },
+        "gap_travel": {
+          "n_obs": 15,
+          "mean_rank": 1.867,
+          "rank_ci": [
+            1.467,
+            2.267
+          ],
+          "delta_vs_chance": -0.633,
+          "selection_rate": 0.733,
+          "sel_ci": [
+            0.533,
+            0.933
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.038,
+          "p_holm": 0.0712,
+          "significant": false,
+          "is_baseline": false
+        },
+        "linear_no_gap": {
+          "n_obs": 15,
+          "mean_rank": 1.467,
+          "rank_ci": [
+            1.2,
+            1.8
+          ],
+          "delta_vs_chance": -1.033,
+          "selection_rate": 0.933,
+          "sel_ci": [
+            0.8,
+            1.0
+          ],
+          "exp_selection": 0.5,
+          "p_perm": 0.0002,
+          "p_holm": 0.0008,
+          "significant": true,
+          "is_baseline": true
+        }
+      },
+      "e0_rank": 2.5,
+      "e0_sel": 0.5,
+      "n": 4,
+      "k": 2,
+      "baseline": "linear_no_gap",
+      "any_significant": true
+    }
+  }
+}

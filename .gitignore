@@ -12,3 +12,8 @@ venv/
 # IDE
 .idea/
 .vscode/
+
+# Web app
+webapp/frontend/node_modules/
+webapp/frontend/.next/
+webapp/backend/meridian.db

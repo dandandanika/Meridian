@@ -1,0 +1,39 @@
+{
+  "_bases": [
+    "D:llama3.1:8b"
+  ],
+  "_alpha": 0.05,
+  "_seeded": [
+    "arab_muslim_female",
+    "white_male"
+  ],
+  "D:llama3.1:8b": {
+    "groups": {
+      "arab_muslim_female": {
+        "rank_none": 6.6,
+        "rank_seeded": 4.4,
+        "effect": -2.2,
+        "ci": [
+          -5.2,
+          0.9
+        ],
+        "p_perm": 0.216,
+        "p_holm": 0.2607,
+        "significant": false
+      },
+      "white_male": {
+        "rank_none": 5,
+        "rank_seeded": 2.9,
+        "effect": -2.1,
+        "ci": [
+          -4.4,
+          0.4
+        ],
+        "p_perm": 0.1304,
+        "p_holm": 0.2607,
+        "significant": false
+      }
+    },
+    "any_significant": false
+  }
+}

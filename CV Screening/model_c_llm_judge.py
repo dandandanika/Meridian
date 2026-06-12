@@ -154,6 +154,29 @@ def _call_openrouter(prompt: str,
     return data["choices"][0]["message"]["content"]
 
 
+def _call_groq(prompt: str, model: str = "llama-3.3-70b-versatile") -> str:
+    """Call Groq's OpenAI-compatible API. Free tier, very fast (LPU), and
+    fully hostable — the recommended way to run this app WITHOUT Ollama, locally
+    or deployed. Needs GROQ_API_KEY (free, no card at console.groq.com)."""
+    import urllib.request
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        raise RuntimeError("Set GROQ_API_KEY environment variable.")
+    payload = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.groq.com/openai/v1/chat/completions",
+        data=payload,
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        data = json.loads(resp.read())
+    return data["choices"][0]["message"]["content"]
+
+
 def _call_huggingface(prompt: str,
                       model: str = "mistralai/Mistral-7B-Instruct-v0.3") -> str:
     """Call HuggingFace Inference API free tier. Needs HF_TOKEN."""
@@ -207,6 +230,7 @@ def _call_mock(prompt: str, model: str = "mock") -> str:
 _BACKENDS = {
     "ollama":      _call_ollama,
     "openrouter":  _call_openrouter,
+    "groq":        _call_groq,
     "huggingface": _call_huggingface,
     "mock":        _call_mock,
 }
